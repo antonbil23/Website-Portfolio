@@ -1,4 +1,37 @@
 /* app.component.css or any other component */
 .container {
-    margin-top: 64px; /* Adjust the margin value as needed */
+  margin-top: 64px; /* Adjust the margin value as needed */
+}
+
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translateY(0);
   }
+  50% {
+    transform: translateY(8px);
+  }
+}
+
+.animate-bounce-slow {
+  animation: bounce 1.9s infinite;
+}
+
+.objects {
+  animation: transitionIn 1s;
+}
+
+.otherContent{
+  animation: transitionIn .4s;
+}
+
+@keyframes transitionIn {
+  from {
+    opacity: 0;
+    transform: rotateX(-5deg);
+  }
+  to {
+    opacity: 1;
+    transform:rotateX(0);
+  }
+}

@@ -1,12 +1,15 @@
-<div class="flex flex-col md:flex-row justify-center h-screen items-center">
-  <div class="flex flex-col md:flex-row items-center justify-center w-full md:w-auto text-center md:text-left mx-auto md:pl-10">
+<div class="objects">
+<div class="relative flex flex-col items-center justify-center h-screen">
+  <div class="flex flex-col md:flex-row justify-center items-center w-full md:w-auto text-center md:text-left mx-auto md:pl-10">
     <div class="flex flex-col md:pr-32">
       <h1 class="text-5xl font-semibold mb-4">Hello! 👋</h1>
       <h1 class="pt-6 text-4xl font-medium pb-7">My Name is Anton Bilonog</h1>
     </div>
 
     <div class="w-64 h-64 flex items-center justify-center">
-      <div class="w-full h-full min-w-full min-h-full rounded-full overflow-hidden">
+      <div
+        class="w-full h-full min-w-full min-h-full rounded-full overflow-hidden"
+      >
         <img
           src="assets/selfportrait.jpg"
           alt="Your Image"
@@ -15,11 +18,20 @@
       </div>
     </div>
   </div>
+
+  <svg
+    class="absolute bottom-0 mb-12 animate-bounce-slow w-12 h-12"
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 32 32"
+  >
+    <image href="assets/scrolldown.png" width="32" height="32" />
+  </svg>
+</div>
 </div>
 
 
 
-<div class="p-10 text-lg">
+<div class="px-10 pt-10 pb-16 text-lg">
   Welcome to my digital corner! I'm a Junior at Virginia Tech majoring in
   Computer Science, with a deep-rooted passion for exploring new concepts and
   making a positive impact on others. This summer, I am thrilled to be joining
@@ -34,7 +46,7 @@
   page. For a deeper look into my projects, and a sneak peek into my mind
   through my blog entries, check out the
   <a
-    routerLink="/contact"
+    routerLink="/blog"
     class="text-[#861F41] hover:text-[#E87722] underline underline-offset-1"
     >Blog</a
   >
@@ -42,7 +54,7 @@
   For a comprehensive overview of my professional journey and an extended
   version of my resume, head over to the
   <a
-    routerLink="/contact"
+    routerLink="/experience"
     class="text-[#861F41] hover:text-[#E87722] underline underline-offset-1"
     >Experience</a
   >
